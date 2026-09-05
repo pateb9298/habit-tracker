@@ -1,0 +1,69 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Thumbnails
+._.DS_Store
+Thumbs.db
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+# Build artifacts
+/build/
+/bin/
+c/build/
+c/build_*/
+# Build artifacts placed in lib/ should be ignored,
+# but ship the prebuilt reference libraries.
+lib/*
+!lib/libhabitgen_amd64.so
+!lib/liblibhabitgen_arm64.so
+!lib/libtree-linux-amd64.so
+!lib/libtree-linux-arm64.so
+
+# macOS debug symbols
+*.dSYM/
+
+# Output and logs
+/output/
+results.csv
+
+
+# Test artifacts
+*.log
+*.out
+*.tmp
+*_results.xml
+clang_tidy_report.txt
+coverage_*.txt
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# GitLab CI token-based clone URLs (just in case)
+*.token
+
+# Ignore test feedback pushed back to students
+feedback/
+
+# Temporary files
+*.bak
+*.orig
+python/dist/
